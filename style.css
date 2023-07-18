@@ -1,0 +1,176 @@
+main {
+    background-color: bisque;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    color: #2D0C03;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+    color: #2D0C03;
+    padding: 0 1.5rem;
+}
+
+.logo2 {
+    color: #2D0C03;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+.hero {
+    background: bisque;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2D0C03;
+    padding: 0rem 2rem;
+}
+
+.column h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.column p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: bisque;
+    background-color: #98504B;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: #000;
+}
+
+.second-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.hero {
+    padding: 0.5rem;
+}
+
+.column2-left {
+    text-align: left;
+    font-size: 15px;
+    padding-left: 3rem;
+}
+
+.column2-right {
+    text-align: right;
+    padding: 0 1.5rem;
+    height: 400px;
+    top: 100%;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    width: 300px;
+    clip-path: circle();
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.UI {
+
+}
+
+.branding {
+
+}
+
+.graphics {
+
+}
+
+
+footer {
+	background-color: #98504B;
+	padding: 20px;
+	text-align: center;
+	color: bisque;
+}
+
+
+@media screen and (max-width: 768px){
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
+}
