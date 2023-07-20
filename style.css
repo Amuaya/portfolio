@@ -1,6 +1,16 @@
 main {
-    background-color: bisque;
+    background-image: linear-gradient(to bottom right, bisque, #FFFFFF);
+    background-size: cover;
 }
+
+::-webkit-scrollbar {
+    width: 2em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2D0C03;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +20,6 @@ main {
 
 nav {
     height: 80px;
-    background-color: bisque;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +48,6 @@ nav a {
 }
 
 .hero {
-    background: bisque;
 }
 
 .hero-container {
@@ -82,7 +90,7 @@ h1 {
 .column p {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
