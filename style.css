@@ -26,7 +26,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: small;
+    font-size: medium;
     font-weight: 500;
     color: #2D0C03;
     padding: 0 1.5rem;
@@ -34,7 +34,7 @@ nav a {
 
 .logo2 {
     color: #2D0C03;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 0 2rem;
 }
 
@@ -137,6 +137,31 @@ button:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.Contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #98504B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.end {
+    color: antiquewhite;
+    padding-bottom: 20px;
+}
+
+.project {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    color: #98504B;
+    background-color: bisque;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
 }
 
 footer {
