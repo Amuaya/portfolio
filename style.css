@@ -4,11 +4,16 @@ main {
 }
 
 ::-webkit-scrollbar {
-    width: 2em;
+    width: 1em;
 }
 
 ::-webkit-scrollbar-track {
+    background-color:bisque;
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #2D0C03;
+    border-radius: 20px;
 }
 
 * {
@@ -28,14 +33,14 @@ nav {
 
 .logo {
     color: #2D0C03;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: 200;
     padding: 0 2rem;
 }
 
 nav a {
     text-decoration: none;
-    font-size: medium;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #2D0C03;
     padding: 0 1.5rem;
@@ -43,7 +48,8 @@ nav a {
 
 .logo2 {
     color: #2D0C03;
-    font-weight: bolder;
+    font-size: 1.25rem;
+    font-weight: 600;
     padding: 0 2rem;
 }
 
@@ -76,7 +82,7 @@ h1 {
 .column h1 {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
@@ -87,14 +93,33 @@ h1 {
     font-weight: bold;
 }
 
-.column p {
+.headline {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
 button {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: #98504B;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.socials {
     padding: 1rem 3rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -105,6 +130,7 @@ button {
     border-radius: 50px;
     transition: 0.5s;
 }
+
 
 button:hover {
     background-color: antiquewhite;
@@ -174,7 +200,6 @@ button:hover {
 
 footer {
 	background-color: #98504B;
-	padding: 20px;
 	text-align: center;
 	color: bisque;
 }
