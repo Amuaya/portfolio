@@ -1,5 +1,5 @@
 main {
-    background-image: linear-gradient(to bottom right, bisque, #FFFFFF);
+    background-image: linear-gradient(to bottom right, rgb(255, 221, 180), #FFFFFF);
     background-size: cover;
 }
 
@@ -15,6 +15,10 @@ main {
     background-color: #2D0C03;
     border-radius: 20px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 * {
     box-sizing: border-box;
@@ -38,12 +42,20 @@ nav {
     padding: 0 2rem;
 }
 
+.logo:hover {
+    cursor: default;
+}
+
 nav a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #2D0C03;
     padding: 0 1.5rem;
+}
+
+nav a:hover {
+    color: #98504B;
 }
 
 .logo2 {
@@ -53,12 +65,37 @@ nav a {
     padding: 0 2rem;
 }
 
+.github {
+    background-color: transparent;
+    color: #2D0C03;
+}
+
+.github:hover {
+    background-color: transparent;
+    color: #2D0C03;
+    transform: scale(1.5);
+}
+
 .hero {
 }
 
 .hero-container {
     display: grid;
     grid-template-columns: 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.split-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.three-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 95vh;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
@@ -72,9 +109,20 @@ nav a {
     padding: 0rem 2rem;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_paragraph {
+    text-align: left;
+}
+
 h1 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 4rem;
     font-weight: bold;
 }
@@ -112,11 +160,28 @@ button {
     font-size: 1.3rem;
     font-weight: 600;
     border: none;
-    color: white;
+    color: rgb(255, 240, 221);
     background-color: #98504B;
     cursor: pointer;
     border-radius: 50px;
     transition: 0.5s;
+}
+
+button:hover {
+    background-color: white;
+    color: #000;
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(152, 80, 75, .4);
+    
+}
+
+.contact_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow_icon {
+    padding-left: 15px;
 }
 
 .socials {
@@ -131,24 +196,10 @@ button {
     transition: 0.5s;
 }
 
-
-button:hover {
-    background-color: antiquewhite;
-    color: #000;
-}
-
-.split-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 95vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
-}
-
-.three-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 95vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
+.socials:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.8);
 }
 
 .hero {
@@ -161,10 +212,12 @@ button:hover {
 }
 
 .card {
-    width: 320px;
+    width: 400px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 5px 15px rgba(152, 80, 75, .4);
+
 }
 
 .card-img {
@@ -198,15 +251,44 @@ button:hover {
     transition: 0.5s;
 }
 
+.project:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
 footer {
 	background-color: #98504B;
+    padding: 20px;
 	text-align: center;
 	color: bisque;
 }
 
+.trademark {
+    padding-top: 30px;
+    font-size: 1rem;
+}
 
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 900px){
+
     .hero-container{
         grid-template-columns: 1fr;
+    }
+
+    .split-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .three-container {
+        grid-template-columns: 1fr;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #2D0C03;
+        padding-bottom: 50px;
     }
 }
