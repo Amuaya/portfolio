@@ -76,9 +76,6 @@ nav a:hover {
     transform: scale(1.5);
 }
 
-.hero {
-}
-
 .hero-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -161,7 +158,7 @@ button {
     font-weight: 600;
     border: none;
     color: rgb(255, 240, 221);
-    background-color: #98504B;
+    background-color: #2D0C03;
     cursor: pointer;
     border-radius: 50px;
     transition: 0.5s;
@@ -217,13 +214,19 @@ button:hover {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(152, 80, 75, .4);
-
+    transition-timing-function: all .5s ease-in-out;
+    transition: .5s;
 }
 
 .card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(152, 80, 75, .4);
 }
 
 .Contact {
