@@ -213,7 +213,6 @@ button:hover {
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(152, 80, 75, .4);
     transition-timing-function: all .5s ease-in-out;
     transition: .5s;
 }
