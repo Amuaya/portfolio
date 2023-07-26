@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>My Web Page</title>
+    <title>Amuaya</title>
+    <!--custom icons from fontawesome-->
+    <script src="https://kit.fontawesome.com/f369ab3518.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
 
     <nav>
-            <div class="logo">A M U A Y A.</div>
-            <div class="nav-items">
-                <a href=" ">ABOUT</a>
-                <a href=" ">WORK</a>
-                <a href=" ">CONTACT</a>
+            <div class="logo">
+                A M U A Y A.
             </div>
-            <div class="logo2">GITHUB</div> 
+
+            <div class="nav-items">
+                <a href="#About">ABOUT</a>
+                <a href="#Skills">SKILLS</a>
+                <a href="#Work">WORK</a>
+                <a href="#Contact">CONTACT</a>
+            </div> 
         </div>
     </nav>
 
@@ -27,44 +32,107 @@
         <div class="hero-container">
             <div class="column">
                 <h1>Hello, I'm Amuaya</h1>
-                <p>Software Dev & UI Designer</p>
-                <button>Contact Me</button>
+                <p class="headline">Software Dev & Interface Designer</p>
+            <div class="row">
+                <button class="contact_btn" onclick="location.href='./#Contact'">
+                    Contact Me
+                    <div class="arrow_icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                </button>
+            </div>
+
             </div>
         </div>
     </section>
 
-    <section class="hero">
-        <div class="second-container">
-            <div class="column2-left">
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus malesuada lacus, ut sagittis turpis congue quis. Morbi sodales ante elit, vel semper nibh semper at. In quis leo tempus, fermentum quam fermentum, pulvinar nulla. Ut sed varius lacus, suscipit consequat ipsum. Phasellus molestie ipsum lorem, vitae fringilla elit maximus facilisis.</p>
+    <section id="About">
+        <h1>About Me</h1>
+        <div class="split-container">
+            <div class="column">
+                <p class="about_paragraph">Welcome to my creative corner! As a front-end developer, I code the web with passion. When I'm not weaving magic through code, I explore graphic design, giving life to colors and pixels. But that's not all—I indulge in drawing and painting, turning blank canvases into vibrant stories. Join me on this thrilling journey where art and innovation collide!</p>
             </div>
-            <div class="column2-right">
+            <div class="column">
                 <img src="me.jpg" class="hero-image" width="100%"/>
             </div>
         </div>
     </section>
 
-    <div class="work">
-    <div class="UI">
-        <h3>UI Desing</h3>
-        <p>
-            sdjsiggjsngeigehrgengegjnjnghweruighwerugehigheihgieuhgiuharggas
-        </p>
-    </div>
-    <div class="branding">
-        <h3>Branding</h3>
-        <p>sgsagiuagbjwagbjsabgjsjadbgasgnasjdgjngwrhghwrugwerhghrwghhghsghasg</p>
-    </div>
-    <div class="graphics">
-        <h3>Graphic Desing</h3>
-        <p>sduhfsuiadhfuiashhawiuhtguiwahegiyas7yw4ut9wyghawiueguiwahtuiw</p>
-    </div>
-    </div>
+    <section id="Skills">
+        <h1>My Skills</h1>
+        <div class="three-container">
+            <div class="column">
+                <h2>UI Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus male.</p>
+            </div>
+            <div class="column">
+                <h2>Branding</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus male.</p>
+            </div>
+            <div class="column">
+                <h2>Graphic Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus male.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id ="Work">
+        <h1>My Work</h1>
+        <div class="split-container">
+            <div class="column">
+                <div class="card">
+                    <img src="design1.jpg" class="card-img">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="design2.jpg" class="card-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class ="Contact">
+        <section id ="Contact"></section>
+        <div class="hero-section">
+            <div class="column">
+                <h1 class="end">Interested in Working</h1>
+                <h1 class="end">Together?</h1>
+                <button class="project">Start a Project</button>
+            </div>
+        </div>
+    </section>   
 </main>
 
+
     <footer>
-		<p>&copy; 2023 Amuaya Designs</p>
+        <button class="socials" onclick="location.href='https://instagram.com/amuaya_/'" target="_blank">
+            <div class="icon">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </div>
+        </button>
+        <button class="socials" onclick="location.href='https://twitter.com/amuaya_'">
+            <div class="icon">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+            </div>
+        </button>
+        <button class="socials">
+            <div class="icon">
+                <i class="fa-brands fa-behance fa-xl"></i>
+            </div>
+        </button>
+        <button class="socials" onclick="location.href='https://www.linkedin.com/in/brandon-manyonyi-7596681a2/'">
+            <div class="icon">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </div>
+        </button>
+        <button class="socials" onclick="location.href='https://github.com/Bradz-1'">
+            <div class="icon">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </div>
+        </button>
+        <p class="trademark">&copy; 2023 Amuaya Designs</p>
 	</footer>
 
 </body>
