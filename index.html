@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +14,13 @@
     <!--custom icons from fontawesome-->
     <script src="https://kit.fontawesome.com/f369ab3518.js" crossorigin="anonymous"></script>
 </head>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
 
 <body>
     <main>
@@ -62,16 +73,16 @@
         <h1>My Skills</h1>
         <div class="three-container">
             <div class="column">
-                <h2>UI Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus male.</p>
+                <h2>Front-End Dev</h2>
+                <p>I specialize in crafting responsive, user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks. With a focus on clean code and attention to detail, I create designs that are both functional and visually appealing.</p>
             </div>
             <div class="column">
                 <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus male.</p>
+                <p>I create impactful branding solutions that connect with audiences, combining creativity and strategy to deliver designs that are memorable, consistent, and visually striking. My goal is to bring your vision to life and ensure your brand stands out in a competitive market. </p>
             </div>
             <div class="column">
                 <h2>Graphic Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia molestie velit, a dignissim lectus ultricies eget. Ut nec urna quis nunc tincidunt tincidunt quis a diam. Mauris in viverra nisi. Suspendisse et lorem eu ex bibendum laoreet in in nulla. Maecenas faucibus leo at rhoncus placerat. Nunc sed elit vel metus vulputate semper. Etiam id lorem eros. Sed ac mi facilisis, tincidunt turpis at, imperdiet lacus. Etiam maximus male.</p>
+                <p>I design visually compelling graphics that communicate ideas effectively and leave a lasting impression. By blending creativity and technical expertise, I deliver designs that align with your vision and elevate your brand's identity.</p>
             </div>
         </div>
     </section>
@@ -107,12 +118,12 @@
 
 
     <footer>
-        <button class="socials" onclick="location.href='https://instagram.com/amuaya_/'" target="_blank">
+        <button class="socials" onclick="window.open('https://instagram.com/amuaya_/', '_blank')">
             <div class="icon">
                 <i class="fa-brands fa-instagram fa-xl"></i>
             </div>
         </button>
-        <button class="socials" onclick="location.href='https://twitter.com/amuaya_'">
+        <button class="socials" onclick="window.open('https://x.com/amuaya_/', '_blank')">
             <div class="icon">
                 <i class="fa-brands fa-twitter fa-xl"></i>
             </div>
@@ -122,17 +133,17 @@
                 <i class="fa-brands fa-behance fa-xl"></i>
             </div>
         </button>
-        <button class="socials" onclick="location.href='https://www.linkedin.com/in/brandon-manyonyi-7596681a2/'">
+        <button class="socials" onclick="window.open('https://www.linkedin.com/in/brandon-manyonyi-7596681a2/', '_blank')">
             <div class="icon">
                 <i class="fa-brands fa-linkedin-in fa-xl"></i>
             </div>
         </button>
-        <button class="socials" onclick="location.href='https://github.com/Bradz-1'">
+        <button class="socials" onclick="window.open('https://github.com/Amuaya/', '_blank')">
             <div class="icon">
                 <i class="fa-brands fa-github fa-xl"></i>
             </div>
         </button>
-        <p class="trademark">&copy; 2023 Amuaya Designs</p>
+        <p class="trademark">&copy; Amuaya Designs</p>
 	</footer>
 
 </body>
